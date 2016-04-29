@@ -8,14 +8,13 @@ class Serveur{
                 presence = false;
         int thermostat = 15;
         int Timer = 0;
-        int HG = 0;
-        int HD = 0;
-        int BG = 0;
-        int BD = 0;
+        int HG = 0, // Capteurs Haut Gauche,
+            HD = 0, //          Haut Droit,
+            BG = 0, //          Bas Gauche,
+            BD = 0; //          Bas Droit
         float temp = 15;
     }
-
-    String HTTP_GET_REQUEST = "GET /",
+    final String HTTP_GET_REQUEST = "GET /",
            HTTP_HEADER = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n",
            HTTP_ERROR = "HTTP/1.1 404 FILE_NOT_FOUND\r\n",
            HTML_AUTOR = "<html><head><meta http-equiv='refresh' content='1' />"
